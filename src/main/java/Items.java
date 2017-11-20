@@ -18,7 +18,7 @@ public class Items {
                 "//Users/igortimokhin/Documents/drivers/chromedriver");
         driver = new ChromeDriver();
 
-        driver.get("file:///Users/igortimokhin/Desktop/FoodItems.html");
+        driver.get("file:///Users/igortimokhin/Documents/MyProjects/items/FoodItems.html");
 
 //        a)	Display the third and fifth item from the above list. Your output should be:
 //        Applesauce, unsweetened
