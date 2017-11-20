@@ -7,9 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by igortimokhin on 11/16/17.
- */
+
 public class Items {
     private static WebDriver driver;
 
@@ -31,10 +29,7 @@ public class Items {
 
         System.out.println(item5 + "\n" + item9 + "\n");
 
-//        List<WebElement> allOptions = driver.findElements(By.cssSelector("span"));
-//            for (WebElement item : allOptions)
-//
-//            System.out.println(item.getText());
+
 
 //        b)	Fetch each food name and its servings and store them in a Map.
 //          Iterate through all the entries in the Map and print them.
