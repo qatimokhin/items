@@ -18,6 +18,8 @@ public class Items {
 
         driver.get("file:///Users/igortimokhin/Documents/MyProjects/items/FoodItems.html");
 
+//        Use your knowledge of WebDriver to fetch the following:
+
 //        a)	Display the third and fifth item from the above list. Your output should be:
 //        Applesauce, unsweetened
 //        Juice, Cranberry-apple drink
