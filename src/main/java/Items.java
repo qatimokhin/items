@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -36,14 +37,19 @@ public class Items {
 //        b)	Fetch each food name and its servings and store them in a Map.
 //          Iterate through all the entries in the Map and print them.
 
-        Map<String, String> map = new HashMap<String, String>();
+        Map<String, String> map = new LinkedHashMap<String, String>();
         for (int i = 0; i < driver.findElements(By.cssSelector("span.title")).size(); i++) {
             String titles = driver.findElements(By.cssSelector("span.title")).get(i).getText();
             String descs = driver.findElements(By.cssSelector("span.description")).get(i).getText();
             map.put(titles, descs);
         }
+        for( String key : map.keySet() ){
 
-        System.out.println(map);
+            String value = map.get(key);
+
+
+        System.out.println(key + " " +value);
+        }
 
         driver.quit();
 
